@@ -20,7 +20,7 @@ builds:
       - CGO_ENABLED=0
     goos:
       - linux
-      - darwin
+      # - darwin
 
 archives:
   - format: tar.gz
@@ -43,3 +43,7 @@ changelog:
     exclude:
       - "^docs:"
       - "^test:"
+
+source:
+  # do not include source
+  enabled: false
