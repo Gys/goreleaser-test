@@ -47,3 +47,10 @@ changelog:
 source:
   # do not include source
   enabled: false
+
+release:
+  github:
+    owner: Gys
+    name: goreleaser-test-2
+    
+  
