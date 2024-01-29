@@ -1,6 +1,8 @@
-module bitbucket.org/greulen/goreleaser
+module bitbucket.org/greulen/goreleaser-test
 
-go 1.21.5
+go 1.17
+
+// go 1.21.5
 
 require github.com/gin-gonic/gin v1.9.1
 
