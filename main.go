@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+	"log"
 	"net/http"
 	"os"
 
@@ -13,6 +15,11 @@ func setupRouter() *gin.Engine {
 	// Disable Console Color
 	// gin.DisableConsoleColor()
 	r := gin.Default()
+
+	// Ping test
+	r.GET("/", func(c *gin.Context) {
+		c.String(http.StatusOK, "OK")
+	})
 
 	// Ping test
 	r.GET("/ping", func(c *gin.Context) {
@@ -69,11 +76,13 @@ func setupRouter() *gin.Engine {
 }
 
 func main() {
+	log.Printf("Hello 1")
+	fmt.Printf("Hello 2")
 	r := setupRouter()
 	// Listen and Server in 0.0.0.0:8080
 	port := os.Getenv("PORT")
 	if port == "" {
-		port = "8080"
+		port = "5000"
 	}
 	r.Run(":" + port)
 }
