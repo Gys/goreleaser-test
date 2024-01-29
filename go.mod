@@ -1,6 +1,6 @@
 module bitbucket.org/greulen/goreleaser-test
 
-go 1.17
+go 1.20
 
 // go 1.21.5
 
