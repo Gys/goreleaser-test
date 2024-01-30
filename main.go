@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -77,7 +76,7 @@ func setupRouter() *gin.Engine {
 
 func main() {
 	log.Printf("Hello 1") // this will print to stdout and be visible in the container logs
-	fmt.Printf("Hello 2") // this not
+	// fmt.Printf("Hello 2") // this not
 	r := setupRouter()
 	// Listen and Server in 0.0.0.0:8080
 	port := os.Getenv("PORT")
