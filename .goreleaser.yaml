@@ -51,6 +51,7 @@ source:
 release:
   github:
     owner: Gys
+    # name will also be the name of resulting binaries in dist/*
     name: goreleaser-test-2
-    
+
   
